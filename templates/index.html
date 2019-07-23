@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  books review
+{% endblock %}
+
+{% block body %}
+<form class="form-inline row" action="{{url_for('home')}}" method="post">
+  <div class="form-group">
+    <div class="">  <input type="text" name="username" placeholder="username" required> </div>
+    <div class=""> <input type="password" name="password" placeholder="password" required></div>
+  </div>
+  <div class=""> <button type="submit" class="btn btn-primary mb-2">login</button></div>
+  <div class=""> <a href="{{url_for('register')}}">register</a></div>
+</form>
+{% endblock %}
