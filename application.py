@@ -54,6 +54,10 @@ def home():
             return render_template("error.html",message="username or password is incorrect")
         db.commit()
 
+@app.route("/home2")
+def home2():
+    return render_template("home.html")
+
 @app.route("/search", methods=["POST"])
 def search():
     isbn = request.form.get("isbn")

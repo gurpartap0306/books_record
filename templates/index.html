@@ -5,12 +5,14 @@
 {% endblock %}
 
 {% block body %}
-<form class="form-inline row" action="{{url_for('home')}}" method="post">
-  <div class="form-group">
-    <div class="">  <input type="text" name="username" placeholder="username" required> </div>
-    <div class=""> <input type="password" name="password" placeholder="password" required></div>
-  </div>
-  <div class=""> <button type="submit" class="btn btn-primary mb-2">login</button></div>
-  <div class=""> <a href="{{url_for('register')}}">register</a></div>
-</form>
+<div class="container-fluid col-8">
+  <form class="form-inline content-justify-center" action="{{url_for('home')}}" method="post">
+    <div class="form-group">
+      <div class="mx-lg-2">  <input type="text" name="username" placeholder="username" required> </div>
+      <div class="mx-lg-2"> <input type="password" name="password" placeholder="password" required></div>
+    <div class="mx-lg-2"> <button type="submit" class="btn btn-primary mb-2">login</button></div>
+    <div class="mx-lg-2"> <a href="{{url_for('register')}}">register</a></div>
+    </div>
+  </form>
+</div>
 {% endblock %}

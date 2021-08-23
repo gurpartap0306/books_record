@@ -5,11 +5,12 @@
 {% endblock %}
 
 {% block body %}
-  <h1 style="text-align:center ">HOME !</h1>
-  <button class="btn" style="postion: absolute; left:500px" ><a href="{{url_for('index')}}">logout</a></button>
-
-  <form class="" action={{url_for('search')}} method="post">
-    <input type="text" name="isbn" placeholder="isbn">
-    <button class="btn btn-primary" type="submit">search</button>
-  </form>
+  <div class="container-fluid">
+    <div class="h3 text-center">HOME !</div>
+    <form class="container-fluid col-6 content-justify-center" action={{url_for("search")}} method="post">
+      <input type="text" name="isbn" placeholder="isbn" required>
+      <button class="btn btn-primary mx-2" type="submit">search</button>
+      <button class="btn"><a href="{{url_for('index')}}">logout</a></button>
+    </form>
+  </div>
 {% endblock %}

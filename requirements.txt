@@ -1,8 +1,8 @@
-Flask
+#Flask
 Flask-Session
-psycopg2
+#psycopg2
 SQLAlchemy
 
 
-key: LgB1TodjeuJEIsMbFZ0bg
-secret: lUHvyCMGR7ccrfckp4cxUaUUuxvbosLICr4hTVhSs
+#key: LgB1TodjeuJEIsMbFZ0bg
+#secret: lUHvyCMGR7ccrfckp4cxUaUUuxvbosLICr4hTVhSs

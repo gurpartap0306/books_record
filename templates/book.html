@@ -5,11 +5,13 @@
 {% endblock %}
 
 {% block body %}
-<div>{% for book in books %}
-  <div>isbn:{{ book.isbn }}</div>
-  <div>title:{{ book.title }}</div>
-  <div>author:{{ book.author }}</div>
-  <div>year:{{ book.year }}</div>
+<div class="container col-5 my-2">{% for book in books %}
+  <div><b>isbn</b>:{{ book.isbn }}</div>
+  <div><b>title:</b>{{ book.title }}</div>
+  <div><b>author:</b>{{ book.author }}</div>
+  <div><b>year:</b>{{ book.year }}</div>
 </div>
+<div class="container col-1 "><button class="btn"><a href={{url_for('home2')}}>home</a></button></div>
+
 {% endfor %}
 {% endblock %}

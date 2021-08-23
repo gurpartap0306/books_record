@@ -11,8 +11,8 @@ engine =create_engine(os.getenv("DATABASE_URL"))
 db=scoped_session(sessionmaker(bind=engine))
 
 def main():
-    #db.execute("CREATE TABLE books(isbn varchar(255) primary key,title varchar(255),author varchar(255), year integer)")
-    #db.commit()
+    db.execute("CREATE TABLE books(isbn varchar(255) primary key,title varchar(255),author varchar(255), year integer)")
+    db.commit()
 
     f=open("books.csv")
     reader=csv.reader(f)
